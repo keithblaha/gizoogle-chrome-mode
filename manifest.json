@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gizoogle Mode",
+  "description": "Gizooglez yo' Chrome shiznit",
+  "version": "4.2.0",
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": "snoop48-faded.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "icons": {
+    "48": "snoop48.png",
+    "128": "snoop128.png"
+  }
+}
