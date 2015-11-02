@@ -8,7 +8,7 @@ I'd like ta create a gizoogle (http://gizoogle.net/) extension fo' Chrome... bas
 4. Load unpacked extension...
 
 # TODO
-- [✓] Basic functionality
+- [x] Basic functionality
 - [ ] Work wit authenticated sites (usin textilizer)
 - [ ] Work betta wit tabs
   - gizoogle likes ta open every last muthafuckin thang up in freshly smoked up tabs yo, but dis aint tracked by dis extension
