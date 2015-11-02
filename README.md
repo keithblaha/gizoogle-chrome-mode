@@ -7,6 +7,10 @@ I'd like ta create a gizoogle (http://gizoogle.net/) extension fo' Chrome... bas
 3. Enable developer mode
 4. Load unpacked extension...
 
+# Use
+1. Click Snoop to instantly gizoogle a site (currently doesn't work with authentication)
+2. Click Snoop again to turn off
+
 # TODO
 - [x] Basic functionality
 - [ ] Work wit authenticated sites (usin textilizer)
