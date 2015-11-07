@@ -1,0 +1,28 @@
+html.gizooglizin {
+  height: 100%;
+}
+
+body.gizooglizin {
+  min-height: 100%;
+}
+
+.gizooglizin {
+  background: white;
+  text-align: center;
+}
+
+.snoop-dance-1 {
+  height: 200px;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/snoopdance3.gif') no-repeat center;
+}
+
+.snoop-dance-2 {
+  height: 200px;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/snoopdance4.gif') no-repeat center;
+}
+
+.snoop-dance-3 {
+  height: 200px;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/snoopdance5.gif') no-repeat center;
+}
+

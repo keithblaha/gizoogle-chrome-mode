@@ -6,21 +6,31 @@
   "version": "4.2.0",
 
   "permissions": [
-    "tabs",
-    "webNavigation",
-    "<all_urls>"
+    "tabs"
   ],
 
   "browser_action": {
-    "default_icon": "snoop48-faded.png"
+    "default_icon": "images/snoop48-faded.png"
   },
 
   "background": {
     "scripts": ["background.js"]
   },
 
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "exclude_matches": ["http://gizoogle.net/*"],
+    "css": ["gizooglize.css"],
+    "js": ["jquery-2.1.4.min.js", "gizooglize.js"]
+  }],
+
+  "web_accessible_resources": [
+    "images/*.gif"
+  ],
+
   "icons": {
-    "48": "snoop48.png",
-    "128": "snoop128.png"
+    "48": "images/snoop48.png",
+    "128": "images/snoop128.png"
   }
 }
+

@@ -8,11 +8,15 @@ I'd like ta create a gizoogle (http://gizoogle.net/) extension fo' Chrome... bas
 4. Load unpacked extension...
 
 # Use
-1. Click Snoop to instantly gizoogle a site (currently doesn't work with authentication)
-2. Click Snoop again to turn off
+1. Click Snoop to gizooglize a site
+2. Click Snoop again to degizooglize
 
 # TODO
 - [x] Basic functionality
 - [ ] Work wit authenticated sites (usin textilizer)
+  - Need ta git gizoogle.net ta git a cold-ass lil cert or find a https joint ta proxy through
 - [ ] Work betta wit tabs
   - gizoogle likes ta open every last muthafuckin thang up in freshly smoked up tabs yo, but dis aint tracked by dis extension
+- [ ] Find way to ignore classes/tags
+- [ ] Tranzizzle ajaxed content
+
