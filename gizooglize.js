@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(function(request) {
   }
 });
 
-var textilizer = 'http://gizoogle.net/textilizer.php';
+var textilizer = 'https://keithblaha.com/gizoogle/textilizer';
 var textilizerPayload = function(text) {
   return {
     translatetext: text
