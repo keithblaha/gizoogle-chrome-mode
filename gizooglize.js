@@ -12,11 +12,6 @@ chrome.runtime.onMessage.addListener(function(request) {
 });
 
 var textilizer = 'https://keithblaha.com/gizoogle/textilizer';
-var textilizerPayload = function(text) {
-  return {
-    translatetext: text
-  };
-};
 
 var gizooglize = function() {
   var r = Math.floor(Math.random() * 3) + 1;
@@ -25,8 +20,20 @@ var gizooglize = function() {
   var arbitraryDelay = $.Deferred();
   setTimeout(arbitraryDelay.resolve, 2000);
   $.when(
-    $.post(textilizer, textilizerPayload(originalHtml)),
-    $.post(textilizer, textilizerPayload(originalTitle)),
+    $.ajax({
+			type: 'POST',
+			url: textilizer,
+			data: originalHtml,
+			dataType: 'text',
+			contentType: 'text/plain; charset=utf-8'
+		}),
+    $.ajax({
+			type: 'POST',
+			url: textilizer,
+			data: originalTitle,
+			dataType: 'text',
+			contentType: 'text/plain; charset=utf-8'
+		}),
     arbitraryDelay
   ).done(function(htmlRes, titleRes) {
     $('html').removeClass('gizooglizin');
